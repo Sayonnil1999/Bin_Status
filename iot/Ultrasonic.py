@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 import signal
 import sys
+import math
 from queue import Queue
 import EditText
 
@@ -57,9 +58,10 @@ class Ultrasonic:
             # and divide by 2, because there and back
             distance = (TimeElapsed * 34300) / 2
             print("Distance: %.1f cm" % distance)
+            # print(self.q.queue)
             if distance < EditText.avg_dist:
                 if self.q.qsize() < self.q.maxsize:
-                    self.q.put(distance)
+                    self.q.put("{:.1f}".format(distance))
                 else:
                     self.sum -= self.q.get()
                     # self.q.get()

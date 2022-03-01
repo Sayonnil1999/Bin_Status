@@ -1,0 +1,13 @@
+[Unit]
+Description=UltraSonic Sensor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/bash /home/pi/Desktop/iot/autostart.sh
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

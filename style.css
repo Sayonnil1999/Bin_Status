@@ -6,6 +6,10 @@
 body {
   /* background-color: #393e46; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(./waste-management\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 500px;
 }
 /* th {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -14,6 +18,10 @@ body {
   color: #fff;
 } */
 h1 {
+  color: red;
+  background-color: yellow;
+}
+h2 {
   color: green;
   /* color: #ffe162; */
 }
@@ -21,7 +29,7 @@ h1 {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: large;
   text-align: center;
-  color: green;
+  color: black;
 }
 #n2 {
   display: inline;

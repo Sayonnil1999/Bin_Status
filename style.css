@@ -20,6 +20,9 @@ body {
 h1 {
   color: red;
   background-color: yellow;
+  padding-left:500 px;
+  padding-right:500 px;
+  background-clip:content-box;
 }
 h2 {
   color: green;
